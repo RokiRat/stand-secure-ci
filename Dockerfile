@@ -1,6 +1,7 @@
 FROM python:3.12-slim
 
 RUN apt-get update && apt-get install -y curl && \
+    apt-get install -y procps && \
     groupadd -g 10000 python_runer && \ 
     useradd python_runer -u 10000 -g python_runer -s /bin/bash -m
 
