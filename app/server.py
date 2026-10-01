@@ -5,7 +5,7 @@ class HealthCheckHandler(BaseHTTPRequestHandler):
         # Проверяем, что запрос пришел именно на эндпоинт /health
         if self.path == '/health':
             self.send_response(200)
-            self.send_header('Content-type', 'text/plain')
+            self.send_header('Content-type', 'application/json')
             self.end_headers()
             self.wfile.write(b'{"status":"ok"}')
         else:
