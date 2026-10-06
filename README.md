@@ -1,7 +1,7 @@
 # stand-secure-ci
 
 ## Учебный стенд для позиции junior DevSecOps
-1. Команда запуска `docker compose up -d --build`
+1. Команда запуска `docker compose up -d --build`. Команда для провекрки юзера `docker-compose exec app id`
 ![Локальный /health](docs/local-health.png)
 
 2. [Actions](https://github.com/RokiRat/stand-secure-ci/actions)
