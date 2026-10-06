@@ -4,11 +4,9 @@ on:
   pull_request:
     branches:
       - main
-      - demo/leak
   push:
     branches:
       - main
-      - demo/leak
 jobs: 
   ci:
     runs-on: ubuntu-slim
