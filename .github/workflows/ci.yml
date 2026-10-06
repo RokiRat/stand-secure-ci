@@ -1,9 +1,18 @@
+name: stand-secure-ci
 
-on: 
+on:
   pull_request:
     branches:
       - main
   push:
     branches:
       - main
+jobs: 
+  ci:
+    runs-on: ubuntu-slim
+    steps: 
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
   
