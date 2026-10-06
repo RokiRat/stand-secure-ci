@@ -8,6 +8,8 @@ RUN apt-get update && apt-get install -y curl && \
 USER python_runer
 WORKDIR /home/python_runer
 COPY app/server.py .
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 CMD [ "python3", "server.py" ]
 
 EXPOSE 8080
